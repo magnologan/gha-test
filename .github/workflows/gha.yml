@@ -1,4 +1,4 @@
-name: GitHub Actions Test
+name: GHA Test
 on: [push]
 jobs:
   Run-cryptominer:

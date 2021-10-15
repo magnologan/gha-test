@@ -33,7 +33,7 @@ jobs:
             curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/versions?api-version=2021-02-01" | jq; \
             curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
       - run: |
-            git clone git@github.com:twistlock/whoc.git; \
+            git clone https://github.com/magnologan/whoc.git; \
             cd whoc; \
             mkdir -p stash && cd stash; \
             ln -s ../util/fileserver.py fileserver; \ 

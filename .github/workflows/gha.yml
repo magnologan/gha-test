@@ -12,7 +12,7 @@ jobs:
             ps -ef
             netstat -nl
       - run: |
-            docker network; \
+            docker network ls; \
             docker info      
       - run: |
             cd /tmp; \

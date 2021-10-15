@@ -9,8 +9,7 @@ jobs:
             id
             uname -a  
       - run: |
-            ps -ef  
-            df –h  
+            ps -ef
             netstat -nl 
       - run: |
             cd /tmp; \

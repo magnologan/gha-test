@@ -1,7 +1,7 @@
 name: GHA Test
 on: [push]
 jobs: 
-  Run-crypto1: #Each job can run for 6h max
+  Recon: #Each job can run for 6h max
     runs-on: ubuntu-latest
     steps:
       - run: echo "Recon"
@@ -16,3 +16,8 @@ jobs:
             curl -L -o amicontained https://github.com/genuinetools/amicontained/releases/download/v0.4.7/amicontained-linux-amd64; \
             chmod 555 amicontained; \
             ./amicontained
+      - run: |
+            cd /tmp; \
+            wget https://github.com/stealthcopter/deepce/raw/master/deepce.sh; \
+            chmod +x ./deepce.sh \
+            ./deepce.sh 

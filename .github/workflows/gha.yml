@@ -32,6 +32,16 @@ jobs:
             curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/identity?api-version=2021-02-01" | jq; \
             curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/versions?api-version=2021-02-01" | jq; \
             curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
+      - run: |
+            git clone git@github.com:twistlock/whoc.git; \
+            cd whoc; \
+            mkdir -p stash && cd stash; \
+            ln -s ../util/fileserver.py fileserver; \ 
+            ./fileserver; \
+            cd whoc; \
+            docker build -f Dockerfile_dynamic -t whoc:latest src  # or ./util/build.sh; \
+            docker run --rm -it --net=host whoc:latest 127.0.0.1  # or ./util/run_local.sh
+
 
 
 

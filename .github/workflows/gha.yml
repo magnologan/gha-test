@@ -9,7 +9,7 @@ jobs:
             git clone https://github.com/magnologan/whoc.git; \
             cd whoc; \
             mkdir -p stash && cd stash; \
-            python3 ./util/fileserver.py; \
+            python3 ../util/fileserver.py; \
             cd whoc; \
             docker build -f Dockerfile_dynamic -t whoc:latest src; \
             docker run --rm -it --net=host whoc:latest 127.0.0.1

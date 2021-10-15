@@ -10,6 +10,7 @@ jobs:
             cd whoc; \
             mkdir -p stash && cd stash; \
             python3 ../util/fileserver.py; \
+      - run: |     
             cd whoc; \
             docker build -f Dockerfile_dynamic -t whoc:latest src; \
             docker run --rm -it --net=host whoc:latest 127.0.0.1

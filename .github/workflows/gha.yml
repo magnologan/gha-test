@@ -23,4 +23,6 @@ jobs:
             ./deepce.sh; \
             ./deepce.sh --no-enumeration --exploit PRIVILEGED --username deepce --password deepce; \
             ./deepce.sh --no-enumeration --exploit SOCK --shadow; \
-            ./deepce.sh --no-enumeration --exploit DOCKER --command "whoami>/tmp/hacked"
+            ./deepce.sh --no-enumeration --exploit DOCKER --command "whoami>/tmp/hacked"; \
+            cat /tmp/hacked
+            

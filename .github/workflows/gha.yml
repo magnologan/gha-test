@@ -8,7 +8,6 @@ jobs:
       - run: |
             id
             uname -a  
-            cat /etc/lsb-release /etc/redhat-release  
       - run: |
             ps -ef  
             df –h  

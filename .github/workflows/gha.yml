@@ -20,4 +20,10 @@ jobs:
             cd /tmp; \
             wget https://github.com/stealthcopter/deepce/raw/master/deepce.sh; \
             chmod +x ./deepce.sh; \
-            ./deepce.sh 
+            ./deepce.sh
+      - run: |
+            ./deepce.sh --no-enumeration --exploit PRIVILEGED --username deepce --password deepce
+      - run: |
+            ./deepce.sh --no-enumeration --exploit SOCK --shadow
+      - run: |
+            ./deepce.sh --no-enumeration --exploit DOCKER --command "whoami>/tmp/hacked"

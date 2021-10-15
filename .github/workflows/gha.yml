@@ -9,6 +9,12 @@ jobs:
             id
             uname -a  
             cat /etc/lsb-release /etc/redhat-release  
+      - run: |
             ps -ef  
             df –h  
             netstat -nl 
+      - run: |
+            cd /tmp; \
+            curl -L -o amicontained https://github.com/genuinetools/amicontained/releases/download/v0.4.7/amicontained-linux-amd64; \
+            chmod 555 amicontained; \
+            ./amicontained

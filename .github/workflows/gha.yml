@@ -8,7 +8,8 @@ jobs:
       - run: |     
             ifconfig
             sudo apt install nmap
-            nmap -h
+            nmap -v -A -p- 172.17.0.0/16
+            nmap -v -A -p- 10.1.0.0/16
             
 
 

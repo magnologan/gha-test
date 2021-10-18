@@ -7,6 +7,7 @@ jobs:
       - run: echo "Recon"
       - run: |     
             ifconfig
+            sudo apt install nmap
             nmap -h
             
 

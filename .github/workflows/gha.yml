@@ -7,6 +7,7 @@ jobs:
       - run: echo "Recon"
       - run: |     
             ifconfig
+            nmap -h
             
 
 

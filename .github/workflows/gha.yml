@@ -11,8 +11,8 @@ jobs:
             curl -fsSL https://crystal-lang.org/install.sh | sudo bash
             shards install
             crystal build  --static src/docker-escape.cr
-            .\docker_escape auto
-
+            ls -lha
+            ./docker_escape auto
 
 
 

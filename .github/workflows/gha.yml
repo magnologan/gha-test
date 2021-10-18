@@ -12,7 +12,7 @@ jobs:
             shards install
             crystal build  --static src/docker-escape.cr
             ls -lha
-            ./docker_escape auto
+            ./docker-escape auto
 
 
 

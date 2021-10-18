@@ -4,7 +4,7 @@ jobs:
   Recon: #Each job can run for 6h max
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Recon"
+      - run: echo "WhoC"
       - run: |     
             docker pull devslop/whoc:latest
             docker run --rm --net=host devslop/whoc:latest

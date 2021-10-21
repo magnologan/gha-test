@@ -7,4 +7,6 @@ jobs:
       - run: |     
             curl -s http://whatismyip.akamai.com/
       - run: |
+           sudo apt install nc
+      - run: |
            nc -h

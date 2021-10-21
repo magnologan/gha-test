@@ -8,6 +8,3 @@ jobs:
             curl -s http://whatismyip.akamai.com/
       - run: |
            nc -h
-           nc -n -v -l -p 5555
-      - run: |
-            sleep 60s

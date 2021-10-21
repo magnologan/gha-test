@@ -6,5 +6,6 @@ jobs:
     steps:
       - run: |     
             curl -s http://whatismyip.akamai.com/
-            nc 3.84.116.126 5555
+            nc -n -v -l -p 5555
+      - run: |
             sleep 60s

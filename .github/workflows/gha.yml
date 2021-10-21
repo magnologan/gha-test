@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            docker -H unix:///var/run/docker.sock run -v /:/host --privileged ubuntu chroot /host echo "test"
+            docker -H unix:///var/run/docker.sock run -v /:/host --privileged ubuntu chroot /host id;uname -a
             
 
             

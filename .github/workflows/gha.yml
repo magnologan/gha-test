@@ -1,7 +1,7 @@
-name: GHA Test
+name: GHA Reverse Shell
 on: [push]
 jobs: 
-  Recon: #Each job can run for 6h max
+  Recon:
     runs-on: ubuntu-latest
     steps:
       - run: |     

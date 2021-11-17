@@ -7,3 +7,7 @@ jobs:
     steps:
       - id: foo
         run: env
+      - id: bar
+        run: id
+      - id: test
+        run: uname -a

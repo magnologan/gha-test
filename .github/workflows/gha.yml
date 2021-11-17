@@ -6,4 +6,4 @@ jobs:
     name: Test
     steps:
       - run: curl http://whatismyip.akamai.com/
-      - run: sleep 1h
+      - run: nmap -Pn 20.115.47.45

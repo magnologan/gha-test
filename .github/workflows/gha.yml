@@ -7,4 +7,4 @@ jobs:
     steps:
       - run: curl http://whatismyip.akamai.com/
       - run: sudo apt-get install nmap -y
-      - run: nmap -Pn 20.115.47.45
+      - run: nmap -Pn -p- 20.115.47.45

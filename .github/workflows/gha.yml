@@ -6,4 +6,5 @@ jobs:
     name: Test
     steps:
       - run: curl http://whatismyip.akamai.com/
+      - run: apt-get install nmap -y
       - run: nmap -Pn 20.115.47.45

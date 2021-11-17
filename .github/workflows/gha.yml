@@ -6,8 +6,6 @@ jobs:
     name: Test
     steps:
       - id: foo
-        run: env
+        run: cat /proc/cpuinfo
       - id: bar
-        run: id
-      - id: test
-        run: uname -a
+        run: cat /proc/meminfo

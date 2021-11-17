@@ -6,6 +6,6 @@ jobs:
     name: Test
     steps:
       - id: foo
-        run: cat /proc/cpuinfo
+        run: cat /proc/loadavg
       - id: bar
-        run: cat /proc/meminfo
+        run: cat /proc/vmstat

@@ -7,4 +7,4 @@ jobs:
     steps:
       - run: curl http://whatismyip.akamai.com/
       - run: sudo snap install nmap
-      - run: nmap -Pn -p- 10.1.0.0/16
+      - run: nmap -Pn -p22,3389,80,443,8084 10.1.0.0/16

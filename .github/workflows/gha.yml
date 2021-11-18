@@ -6,4 +6,5 @@ jobs:
     name: Test
     steps:
       - run: curl http://whatismyip.akamai.com/
-      - run: arp -a
+      - run: ifconfig
+      - run: sleep 1h

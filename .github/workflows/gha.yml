@@ -5,6 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     name: Test
     steps:
-      - run: curl http://whatismyip.akamai.com/
-      - run: ifconfig
-      - run: sleep 1h
+      - run: env

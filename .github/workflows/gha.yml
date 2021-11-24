@@ -8,7 +8,7 @@ jobs:
       - run: |
             sudo apt install nmap -y
       - run: |
-            nmap -p8084 --script http-methods –script-args httpmethods.test-all=true localhost
+            nmap -p8084 --script http-methods --script-args httpmethods.test-all=true localhost
       - run: |
             nmap -p8084 --script http-enum -sV localhost
       - run: |

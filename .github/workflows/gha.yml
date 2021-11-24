@@ -6,7 +6,7 @@ jobs:
     name: Test
     steps:
       - run: |
-            sudo install nmap -y
+            sudo apt install nmap -y
       - run: |
             nmap -p8084 –script http-methods –script-args httpmethods.test-all=true localhost
       - run: |

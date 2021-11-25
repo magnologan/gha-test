@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-  ENV:
+  Nmap:
     runs-on: ubuntu-latest
-    name: Test
+    name: Nmap
     steps:
       - run: |
             sudo apt install nmap -y
@@ -13,3 +13,12 @@ jobs:
             nmap -p8084 --script http-enum -sV localhost
       - run: |
             nmap -p8084 --script http-brute localhost
+      - run: |
+          nmap -p8084 -sV –script http-unsafe-output-escaping localhost      
+      - run: |
+          nmap -p8084 -sV –script http-sql-injection localhost
+      - run: |
+          nmap -p8084 -sV –script http-default-accounts localhost
+      - run: |
+          nmap -p8084 -sV –script http-git localhost
+        

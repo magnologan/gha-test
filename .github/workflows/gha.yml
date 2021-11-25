@@ -14,11 +14,11 @@ jobs:
       - run: |
             nmap -p8084 --script http-brute localhost
       - run: |
-          nmap -p8084 -sV –script http-unsafe-output-escaping localhost      
+          nmap -p8084 -sV --script http-unsafe-output-escaping localhost      
       - run: |
-          nmap -p8084 -sV –script http-sql-injection localhost
+          nmap -p8084 -sV --script http-sql-injection localhost
       - run: |
-          nmap -p8084 -sV –script http-default-accounts localhost
+          nmap -p8084 -sV --script http-default-accounts localhost
       - run: |
-          nmap -p8084 -sV –script http-git localhost
+          nmap -p8084 -sV --script http-git localhost
         

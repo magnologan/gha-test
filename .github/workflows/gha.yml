@@ -8,17 +8,4 @@ jobs:
       - run: |
             sudo apt install nmap -y
       - run: |
-            nmap -p8084 --script http-methods --script-args httpmethods.test-all=true localhost
-      - run: |
-            nmap -p8084 --script http-enum -sV localhost
-      - run: |
-            nmap -p8084 --script http-brute localhost
-      - run: |
-          nmap -p8084 -sV --script http-unsafe-output-escaping localhost      
-      - run: |
-          nmap -p8084 -sV --script http-sql-injection localhost
-      - run: |
-          nmap -p8084 -sV --script http-default-accounts localhost
-      - run: |
-          nmap -p8084 -sV --script http-git localhost
-        
+            nmap -p8084 --script default,safe,exploit localhost

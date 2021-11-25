@@ -8,4 +8,4 @@ jobs:
       - run: |
             sudo apt install nmap -y
       - run: |
-            nmap -p8084 --script default,safe,exploit localhost
+            nmap -sV -p8084 --script default,safe,exploit --resolve-all localhost

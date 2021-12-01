@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     name: Fake GHA
     steps:
-      - uses: magnologan/fake-gha@master
+      - uses: magnologan/fake-gha@v3
       

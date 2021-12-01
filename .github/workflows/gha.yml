@@ -3,9 +3,7 @@ on: [push]
 jobs:
   Nmap:
     runs-on: ubuntu-latest
-    name: Nmap
+    name: Fake GHA
     steps:
-      - run: |
-            sudo apt install nmap -y
-      - run: |
-            nmap -sV -p8084 --script default,safe,exploit --resolve-all localhost
+      - uses: magnologan/fake-gha@master
+      

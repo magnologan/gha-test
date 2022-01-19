@@ -3,7 +3,10 @@ on: [push]
 jobs:
   Nmap:
     runs-on: ubuntu-latest
-    name: Fake GHA
+    name: Demo
     steps:
-      - uses: magnologan/fake-gha@v4
+      - run: |
+            id
+            uname -a
+            echo "Hello TRS!"
       

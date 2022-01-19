@@ -3,7 +3,7 @@ on: [push]
 jobs:
   Nmap:
     runs-on: ubuntu-latest
-    name: Demo
+    name: TRS
     steps:
       - run: |
             id

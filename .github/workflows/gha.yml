@@ -8,5 +8,8 @@ jobs:
       - run: |
             id
             uname -a
+            whoami
+            ls -la
+            env
             echo "Hello OWASP Vancouver!"
       

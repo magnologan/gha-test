@@ -3,7 +3,7 @@ on: [push]
 jobs:
   Vancouver:
     runs-on: ubuntu-latest
-    name: OWASP
+    name: Ottawa
     steps:
       - run: |
             id

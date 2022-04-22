@@ -10,6 +10,7 @@ jobs:
             uname -a
             whoami
             ls -la
+            cat /etc/passwd
             env
             echo "Hello OWASP Vancouver!"
       

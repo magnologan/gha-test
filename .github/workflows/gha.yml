@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  Nmap:
+  Vancouver:
     runs-on: ubuntu-latest
     name: OWASP
     steps:

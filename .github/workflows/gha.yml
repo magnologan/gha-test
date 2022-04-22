@@ -3,10 +3,10 @@ on: [push]
 jobs:
   Nmap:
     runs-on: ubuntu-latest
-    name: TRS
+    name: OWASP
     steps:
       - run: |
             id
             uname -a
-            echo "Hello TRS!"
+            echo "Hello OWASP Vancouver""
       

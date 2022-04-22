@@ -8,5 +8,5 @@ jobs:
       - run: |
             id
             uname -a
-            echo "Hello OWASP Vancouver""
+            echo "Hello OWASP Vancouver"
       

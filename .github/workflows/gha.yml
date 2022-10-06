@@ -1,13 +1,13 @@
 on: [push]
 
 jobs:
-  Vancouver:
+  Toronto:
     runs-on: ubuntu-latest
-    name: Ottawa
+    name: TO
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello OWASP Pacific North West"
+            echo "Hello SecTor 2022!"
       

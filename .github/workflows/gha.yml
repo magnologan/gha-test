@@ -3,7 +3,7 @@ on: [push]
 jobs:
   SecTor:
     runs-on: ubuntu-latest
-    name: SecTor
+    name: SecTor2022
     steps:
       - run: |
             id

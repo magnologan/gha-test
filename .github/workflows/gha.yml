@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  SecTor:
+  H2HC:
     runs-on: ubuntu-latest
     name: H2HC2022
     steps:

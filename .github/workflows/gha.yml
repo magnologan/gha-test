@@ -3,11 +3,11 @@ on: [push]
 jobs:
   SecTor:
     runs-on: ubuntu-latest
-    name: SecTor2022
+    name: H2HC2022
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello SecTor 2022!"
+            echo "Hello H2HC 2022!"
       

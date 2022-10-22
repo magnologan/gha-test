@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  Toronto:
+  SP:
     runs-on: ubuntu-latest
     name: H2HCBackdoor
     steps:

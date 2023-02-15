@@ -3,11 +3,11 @@ on: [push]
 jobs:
   H2HC:
     runs-on: ubuntu-latest
-    name: NDCSecurity2023
+    name: AppSec Dublin 2023
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello NDC Security 2023!"
+            echo "Hello AppSec Dublin 2023!"
       

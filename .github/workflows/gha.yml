@@ -3,11 +3,11 @@ on: [push]
 jobs:
   H2HC:
     runs-on: ubuntu-latest
-    name: AppSec Dublin 2023
+    name: Secure Software Design - SFU
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello AppSec Dublin 2023!"
+            echo "Hello Secure Software Design - SFU 2023!"
       

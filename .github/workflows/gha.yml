@@ -1,7 +1,7 @@
 on: [push]
 
 jobs:
-  H2HC:
+  SFU:
     runs-on: ubuntu-latest
     name: Secure Software Design - SFU
     steps:

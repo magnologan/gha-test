@@ -3,6 +3,6 @@ on: [push]
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: Secure Software Design - SFU
+    name: NorthSec 2023 - Fake GHA
     steps:
       - uses: magnologan/fake-gha@v4

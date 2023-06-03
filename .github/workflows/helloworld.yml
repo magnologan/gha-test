@@ -9,4 +9,4 @@ jobs:
             id
             uname -a
             env
-            echo "BSides Buffalo NY 2023!"
+            echo "Hello BSides Buffalo NY 2023!"

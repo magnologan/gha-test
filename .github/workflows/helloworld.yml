@@ -3,10 +3,10 @@ on: [push]
 jobs:
   nsec:
     runs-on: ubuntu-latest
-    name: NorthSec 2023
+    name: BSides Buffalo NY 2023
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello NorthSec 2023!"
+            echo "BSides Buffalo NY 2023!"

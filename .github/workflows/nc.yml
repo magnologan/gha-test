@@ -3,7 +3,7 @@ on: [push]
 jobs:
   nsec:
     runs-on: ubuntu-latest
-    name: BSides Buffalo 2023
+    name: BSides Buffalo
     steps:
       - run: |
             curl -s https://icanhazip.com

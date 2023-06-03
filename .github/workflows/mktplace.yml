@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     name: BSides Buffalo - Fake GHA
     steps:
-      - uses: magnologan/fake-gha
+      - uses: magnologan/fake-gha@main

@@ -3,6 +3,6 @@ on: [push]
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: NorthSec 2023 - Fake GHA
+    name: BSides Buffalo - Fake GHA
     steps:
       - uses: magnologan/fake-gha@v4

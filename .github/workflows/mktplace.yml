@@ -8,4 +8,4 @@ jobs:
         - run: |
             id
             uname -a
-        - uses: magnologan/fake-gha@v5
+        # - uses: magnologan/fake-gha@v5

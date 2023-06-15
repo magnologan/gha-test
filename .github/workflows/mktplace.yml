@@ -3,9 +3,9 @@ on: [push]
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: BSides Buffalo - Fake GHA
+    name: TyphoonCon - Fake GHA
     steps:
         - run: |
             id
             uname -a
-      # - uses: magnologan/fake-gha@v5
+        - uses: magnologan/fake-gha@v5

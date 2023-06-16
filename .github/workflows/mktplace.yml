@@ -3,7 +3,7 @@ on: [push]
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: TyphoonCon - Fake GHA
+    name: TyphoonCon
     steps:
         - run: |
             id

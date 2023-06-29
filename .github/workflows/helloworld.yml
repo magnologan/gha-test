@@ -1,12 +1,12 @@
 on: [push]
 
 jobs:
-  nsec:
+  jobbb:
     runs-on: ubuntu-latest
-    name: TyphoonCon
+    name: GHSCD BB 2023
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello TyphoonCon 2023!"
+            echo "Hello GHSCD BB 2023!"

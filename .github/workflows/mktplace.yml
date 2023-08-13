@@ -3,7 +3,7 @@ on: [push]
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: TyphoonCon 2023
+    name: AppSec Village 2023
     steps:
         - run: |
             id

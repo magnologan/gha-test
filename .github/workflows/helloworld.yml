@@ -1,12 +1,12 @@
 on: [push]
 
 jobs:
-  jobbb:
+  sample:
     runs-on: ubuntu-latest
-    name: GHSCD BB 2023
+    name: AppSec Village 2023
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello GHSCD BB 2023!"
+            echo "Hello AppSec Village 2023!"

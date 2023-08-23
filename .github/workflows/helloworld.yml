@@ -1,12 +1,14 @@
+name: CoP
+
 on: [push]
 
 jobs:
   sample:
     runs-on: ubuntu-latest
-    name: AppSec Village 2023
+    name: AppSec CoP
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello AppSec Village 2023!"
+            echo "Hello BoC!"

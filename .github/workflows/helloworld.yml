@@ -1,14 +1,14 @@
-name: CoP
+name: SFU
 
 on: [push]
 
 jobs:
   sample:
     runs-on: ubuntu-latest
-    name: AppSec CoP
+    name: Workshop SFU
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello BoC!"
+            echo "Hello SFU!"

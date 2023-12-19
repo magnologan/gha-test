@@ -7,8 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     name: GHSCD 2023
     steps:
-      - run: |
-            id
-            uname -a
-            env
-            echo "Hello BB!"
+      - run: id
+      - run: uname -a
+      - run: env
+      - run: echo "Hello BB!"

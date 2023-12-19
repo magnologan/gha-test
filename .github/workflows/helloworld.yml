@@ -3,9 +3,17 @@ name: GHSCD 2023
 on: [push]
 
 jobs:
-  exemplo:
+  job1:
     runs-on: ubuntu-latest
     name: GHSCD 2023
+    steps:
+      - run: id
+      - run: uname -a
+      - run: env
+      - run: echo "Hello BB!"
+  job2: 
+    runs-on: ubuntu-latest
+    name: GHSCD
     steps:
       - run: id
       - run: uname -a

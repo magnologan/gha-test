@@ -19,3 +19,19 @@ jobs:
       - run: uname -a
       - run: env
       - run: echo "Hello BB!"
+  job3: 
+    runs-on: ubuntu-latest
+    name: GHSCD2
+    steps:
+      - run: id
+      - run: uname -a
+      - run: env
+      - run: echo "Hello BB!"
+  job4: 
+    runs-on: ubuntu-latest
+    name: GHSCD3
+    steps:
+      - run: id
+      - run: uname -a
+      - run: env
+      - run: echo "Hello BB!"

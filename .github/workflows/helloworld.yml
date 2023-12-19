@@ -1,14 +1,14 @@
-name: SFU
+name: GHSCD 2023
 
 on: [push]
 
 jobs:
-  sample:
+  exemplo:
     runs-on: ubuntu-latest
-    name: Workshop SFU
+    name: GHSCD 2023
     steps:
       - run: |
             id
             uname -a
             env
-            echo "Hello SFU!"
+            echo "Hello BB!"

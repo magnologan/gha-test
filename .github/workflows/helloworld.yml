@@ -1,11 +1,11 @@
 name: GHFC 2023
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   job1:
     runs-on: ubuntu-latest
-    name: GHFC 2023
+    name: Job
     steps:
       - run: id
       - run: uname -a

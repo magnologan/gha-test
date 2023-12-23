@@ -1,37 +1,13 @@
-name: GHSCD 2023
+name: GHFC 2023
 
 on: [push]
 
 jobs:
   job1:
     runs-on: ubuntu-latest
-    name: GHSCD 2023
+    name: GHFC 2023
     steps:
       - run: id
       - run: uname -a
       - run: env
-      - run: echo "Hello BB!"
-  job2: 
-    runs-on: ubuntu-latest
-    name: GHSCD
-    steps:
-      - run: id
-      - run: uname -a
-      - run: env
-      - run: echo "Hello BB!"
-  job3: 
-    runs-on: ubuntu-latest
-    name: GHSCD2
-    steps:
-      - run: id
-      - run: uname -a
-      - run: env
-      - run: echo "Hello BB!"
-  job4: 
-    runs-on: ubuntu-latest
-    name: GHSCD3
-    steps:
-      - run: id
-      - run: uname -a
-      - run: env
-      - run: echo "Hello BB!"
+      - run: echo "Hello GHFC!"

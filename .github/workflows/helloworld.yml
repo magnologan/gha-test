@@ -1,13 +1,13 @@
-name: GHFC 2023
+name: GHSCD 2024
 
 on: [push, workflow_dispatch]
 
 jobs:
-  job1:
+  hello-world:
     runs-on: ubuntu-latest
     name: Job
     steps:
       - run: id
       - run: uname -a
       - run: env
-      - run: echo "Hello GHFC!"
+      - run: echo "Hello GHSCD 2024!"

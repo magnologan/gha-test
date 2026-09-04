@@ -10,4 +10,4 @@ jobs:
         - run: |
             id
             uname -a
-        - uses: magnologan/fake-gha@v6
+        - uses: magnologan/fake-gha@v7

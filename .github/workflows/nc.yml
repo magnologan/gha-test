@@ -1,4 +1,4 @@
-name: InfoSec Relations - Offensive Engineering - Netcat Backdoor
+name: Netcat Backdoor - InfoSec Relations - Offensive Engineering - 
 
 on: [workflow_dispatch]
 

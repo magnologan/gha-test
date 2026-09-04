@@ -1,11 +1,11 @@
-name: Security Boulevard - Marketplace
+name: InfoSec Relations - Offensive Engineering - Marketplace
 
 on: workflow_dispatch
 
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: Security Boulevard
+    name: InfoSec Relations - Offensive Engineering - Fake GHA
     steps:
         - run: |
             id

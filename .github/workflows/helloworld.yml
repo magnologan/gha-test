@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
   hello-world:
     runs-on: ubuntu-latest
-    name: Job
+    name: Hello World!
     steps:
       - run: id
       - run: uname -a

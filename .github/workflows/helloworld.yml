@@ -1,4 +1,4 @@
-name: Security Boulevard - Hello World!
+name: InfoSec Relations - Offensive Engineering - Hello World!
 
 on: workflow_dispatch
 
@@ -10,5 +10,5 @@ jobs:
       - run: id
       - run: uname -a
       - run: env
-      - run: echo "Hello Security Boulevard!"
+      - run: echo "Hello InfoSec Relations - Offensive Engineering!"
 

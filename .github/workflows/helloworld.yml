@@ -1,4 +1,4 @@
-name: Workshop CyberLab
+name: Security Boulevard
 
 on: workflow_dispatch
 
@@ -10,5 +10,5 @@ jobs:
       - run: id
       - run: uname -a
       - run: env
-      - run: echo "Hello FEBRABAN CyberLab!"
+      - run: echo "Hello Security Boulevard!"
 

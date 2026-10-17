@@ -1,11 +1,11 @@
-name: GitHub Marketplace -  InfoSec Relations - Offensive Engineering
+name: GitHub Marketplace -  OWASP Ottawa Day  
 
 on: workflow_dispatch
 
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: InfoSec Relations - Offensive Engineering - Fake GHA
+    name: OWASP Ottawa Day - Fake GHA
     steps:
         - run: |
             id

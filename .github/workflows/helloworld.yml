@@ -1,4 +1,4 @@
-name: Hello World - InfoSec Relations - Offensive Engineering
+name: Hello World - OWASP Ottawa Day
 
 on: workflow_dispatch
 
@@ -10,5 +10,5 @@ jobs:
       - run: id
       - run: uname -a
       - run: env
-      - run: echo "Hello InfoSec Relations - Offensive Engineering!"
+      - run: echo "Hello OWASP Ottawa Day 2026!"
 

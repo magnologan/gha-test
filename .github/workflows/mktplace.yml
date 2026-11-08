@@ -1,11 +1,11 @@
-name: GitHub Marketplace -  OWASP Ottawa Day  
+name: GitHub Marketplace -  The Long Con
 
 on: workflow_dispatch
 
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: OWASP Ottawa Day - Fake GHA
+    name: The Long Con - Fake GHA
     steps:
         - run: |
             id

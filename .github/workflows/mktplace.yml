@@ -1,11 +1,11 @@
-name: GitHub Marketplace -  The Long Con
+name: GitHub Marketplace - Fake GHA
 
 on: workflow_dispatch
 
 jobs:
   GHA:
     runs-on: ubuntu-latest
-    name: The Long Con - Fake GHA
+    name: fake-gha
     steps:
         - run: |
             id

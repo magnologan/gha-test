@@ -1,4 +1,4 @@
-name: Hello World - The Long Con
+name: Hello World
 
 on: workflow_dispatch
 
@@ -10,5 +10,5 @@ jobs:
       - run: id
       - run: uname -a
       - run: env
-      - run: echo "Hello The Long Con 2026!"
+      - run: echo "Hello World GHA!"
 
